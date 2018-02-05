@@ -1,2 +1,28 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+
+<h1>Searching for - <%= @search_term  %></h1>
+
+<% if @recipes.nil? || @recipes.empty? %>
+  <p>Sorry, we couldn't find any recipe for your search.</p>
+
+<% else %>
+
+  <table border="1">
+    <tr>
+      <th>Image</th>
+      <th>Title</th>
+      <th>Recipe</th>
+    </tr>
+
+  <% @recipes.each do |recipe| %>
+    <p><%= sanitize recipe["title"] %></p>
+<!--       <tr class=<%= cycle('even', 'odd')  %>>
+        <td><%= image_tag(recipe["image_url"], height: '120',)%></td>
+        <td><%= recipe["title"] %></td>
+        <td><%= recipe["source_url"] %></td>
+
+      </tr> -->
+    <% end %>
+
+  </table>
+
+<% end %>

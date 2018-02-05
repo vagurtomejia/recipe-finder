@@ -1,9 +1,9 @@
-class RecipesFinder
+class Recipe
 
   include HTTParty
 
   base_uri 'http://food2fork.com/api'
-  default_params fields: "smallIcon,shortDescription", q: "search", key: ENV["FOOD2FORK_KEY"]
+  default_params fields: "title,source_url,image_url,ingredients", q: "search", key: ENV["FOOD2FORK_KEY"]
   format :json
 
   def self.for term
