@@ -7,7 +7,7 @@ Searches for recipes based on a/some keyword/s.
 ### Pedagogical goal:
 Implementing a simple database-less MVC application with Rails.
 This app is the implementation of my basic Rails tutorial that you can find [here](https://github.com/vagurtomejia/hANuMAn/blob/master/dev/creating-a-raw-rails-app.md).
-You can find the bootstrap files provided by John Hopkins University [here](https://github.com/jhu-ep-coursera/fullstack-course1-module3) Ruby on Rails repo.
+You can find the bootstrap files provided by Johns Hopkins University [here](https://github.com/jhu-ep-coursera/fullstack-course1-module3) Ruby on Rails repo.
 
 ### Example of use:
 http://recipefinder/?search=potatoe
